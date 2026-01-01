@@ -19,7 +19,7 @@ Click the green button and copy the url.
 Go to your terminal, clone the repository and navigate to it.
 
 ```sh
-git clone https://github.com/alsonick/vercel-swag.git
+git clone https://github.com/alsonick/vercel.notnick.io.git
 cd vercel-swag
 ```
 

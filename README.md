@@ -46,3 +46,7 @@ After that navigate to the `swag.json` file inside the `data` directory and add 
 ### 4. Submit your pr
 
 After you've done the following steps, commit your changes and open a pr. 🎉 
+
+### License
+
+MIT License

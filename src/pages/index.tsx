@@ -22,10 +22,20 @@ const Home: NextPage = () => {
         <meta name="twitter:title" content={title} />
         <meta property="og:description" content={description} />
         <meta name="twitter:description" content={description} />
+        <meta name="theme-color" content="#b921ff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:creator" content="@heynickn" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta name="description" content={description} key="desc" />
-        <meta property="og:url" content="https://vercel-swag.vercel.app/" />
+        <meta property="twitter:image" content="/og.png" />
+        <meta property="og:image" content="/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:site_name" content="vercel.notnick.io" />
+        <meta property="og:url" content="https://vercel.notnick.io" />
       </Head>
       <Script async defer src="https://buttons.github.io/buttons.js" />
       <nav className="flex items-center h-12 w-full">
@@ -34,7 +44,7 @@ const Home: NextPage = () => {
           href="https://github.com/alsonick/vercel-swag"
           target="_blank"
         >
-          <FaGithub className="text-4xl duration-300 hover:opacity-60" />
+          <FaGithub className="text-4xl md:hover:scale-110 duration-300 hover:opacity-60" />
         </Link>
       </nav>
       <header className="flex flex-col justify-center items-center text-center pt-20">
@@ -44,7 +54,7 @@ const Home: NextPage = () => {
         <p className="text-gray-500 text-2xl mt-5 font-medium">
           Click{' '}
           <Link
-            className="font-bold text-pink-500 hover:underline"
+            className="font-bold text-[#b921ff] hover:underline"
             href="https://github.com/alsonick/vercel-swag/blob/main/CONTRIBUTING.md"
             target="_blank"
           >
@@ -55,7 +65,7 @@ const Home: NextPage = () => {
         <p className="text-gray-500 text-2xl mt-1 font-medium">
           Email{' '}
           <Link
-            className="font-bold text-pink-500 hover:underline"
+            className="font-bold text-[#b921ff] hover:underline"
             href="mailto:hi@notnick.io"
           >
             hi@notnick.io
@@ -78,7 +88,7 @@ const Home: NextPage = () => {
               />
             </picture>
             <Link
-              className="text-left overflow-hidden flex items-center font-bold mt-4 hover:underline hover:opacity-70 duration-300"
+              className="text-left w-fit overflow-hidden flex items-center font-bold mt-4 hover:underline hover:opacity-70 duration-300"
               href={`https://twitter.com/${swag.twitter_handle}`}
               title={`Follow @${swag.twitter_handle} on Twitter.`}
               target="_blank"
@@ -88,6 +98,57 @@ const Home: NextPage = () => {
           </div>
         ))}
       </div>
+      <footer className="flex items-center justify-between mt-10 pt-10 pb-1">
+        <div className="flex flex-col">
+          <h2 className="sm:text-lg text-base opacity-50 font-bold">
+            Nicholas Njoki
+          </h2>
+          <p className="text-gray-500 opacity-50 text-xs">
+            &copy; {new Date().getFullYear()} | All rights reserved.
+          </p>
+          <p className="text-gray-500 opacity-50 text-xs">
+            Made with{' '}
+            <Link
+              className="font-bold"
+              href="https://nextjs.org/"
+              title="Next.js"
+            >
+              Next.js
+            </Link>
+            ,{' '}
+            <Link
+              className="font-bold"
+              href="https://tailwindcss.com/"
+              title="Tailwind"
+            >
+              Tailwind
+            </Link>{' '}
+            &
+            <Link
+              className="font-bold"
+              href="https://vercel.com/"
+              title="Vercel"
+            >
+              {' '}
+              Vercel
+            </Link>
+            .
+          </p>
+          <div className="flex items-center">
+            <p className="text-gray-500 opacity-50 text-xs mr-1 ">
+              Built with ❤️ by{' '}
+              <Link
+                className="font-bold"
+                href="https://notnick.io"
+                title="Nicholas Njoki"
+              >
+                Nicholas Njoki
+              </Link>
+              .{' '}
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

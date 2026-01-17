@@ -77,24 +77,26 @@ const Home: NextPage = () => {
         <b className="text-gray-400">{removeDuplicates().length}</b> vercel
         swaggers 😎
       </span>
-      <div className="columns-1 md:columns-2 lg:columns-4 gap-10 space-y-4 ">
+      <div className="columns-1 md:columns-2 lg:columns-4 gap-10 space-y-4">
         {SWAG.map((swag) => (
-          <div className="overflow-hidden" key={swag.twitter_handle}>
-            <picture className="h-min w-full">
-              <img
-                className="rounded-2xl opacity-50 hover:opacity-100 duration-300 "
-                src={`/pictures/@${swag.twitter_handle}-vercel-swag-${swag.pic_index}.${swag.file_ext}`}
-                alt="Vercel Swag"
-              />
-            </picture>
-            <Link
-              className="text-left w-fit overflow-hidden flex items-center font-bold mt-4 hover:underline hover:opacity-70 duration-300"
-              href={`https://twitter.com/${swag.twitter_handle}`}
-              title={`Follow @${swag.twitter_handle} on Twitter.`}
-              target="_blank"
-            >
-              <FaTwitter className="mr-1 text-lg" />@{swag.twitter_handle}
-            </Link>
+          <div className="break-inside-avoid mb-4" key={swag.twitter_handle}>
+            <div className="overflow-hidden">
+              <picture className="block w-full">
+                <img
+                  className="rounded-2xl opacity-50 hover:opacity-100 duration-300 w-full"
+                  src={`/pictures/@${swag.twitter_handle}-vercel-swag-${swag.pic_index}.${swag.file_ext}`}
+                  alt="Vercel Swag"
+                />
+              </picture>
+              <Link
+                className="text-left w-fit overflow-hidden flex items-center font-bold mt-4 hover:underline hover:opacity-70 duration-300"
+                href={`https://twitter.com/${swag.twitter_handle}`}
+                title={`Follow @${swag.twitter_handle} on Twitter.`}
+                target="_blank"
+              >
+                <FaTwitter className="mr-1 text-lg" />@{swag.twitter_handle}
+              </Link>
+            </div>
           </div>
         ))}
       </div>

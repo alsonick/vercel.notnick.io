@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <meta name="twitter:title" content={title} />
         <meta property="og:description" content={description} />
         <meta name="twitter:description" content={description} />
-        <meta name="theme-color" content="#b921ff" />
+        <meta name="theme-color" content="#30D158" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@heynickn" />
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
         <p className="text-gray-500 text-2xl mt-5 font-medium">
           Click{' '}
           <Link
-            className="font-bold text-[#b921ff] hover:underline"
+            className="font-bold text-[#30D158] hover:underline"
             href="https://github.com/alsonick/vercel-swag/blob/main/CONTRIBUTING.md"
             target="_blank"
           >
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
         <p className="text-gray-500 text-2xl mt-1 font-medium">
           Email{' '}
           <Link
-            className="font-bold text-[#b921ff] hover:underline"
+            className="font-bold text-[#30D158] hover:underline"
             href="mailto:hi@notnick.io"
           >
             hi@notnick.io

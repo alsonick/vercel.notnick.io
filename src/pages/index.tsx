@@ -106,7 +106,7 @@ const Home: NextPage = () => {
             Nicholas Njoki
           </h2>
           <p className="text-gray-500 opacity-50 text-xs">
-            &copy; {new Date().getFullYear()} | All rights reserved.
+            &copy; {new Date().getFullYear()} | Nicholas Njoki | MIT.
           </p>
           <p className="text-gray-500 opacity-50 text-xs">
             Made with{' '}
